@@ -2,7 +2,10 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.MethodHandles;
+
+import java.time.Duration;
 
 public class NotBookPage extends MethodHandles {
 
@@ -11,6 +14,8 @@ public class NotBookPage extends MethodHandles {
     private By shoppingCartItem = By.cssSelector(".cart-qty");
 
     private By shoppingCartLink = By.cssSelector(".ico-cart");
+
+    WebDriverWait wait;
 
 
 

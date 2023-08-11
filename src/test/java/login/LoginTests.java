@@ -9,8 +9,6 @@ import pages.LoginPage;
 
 import java.io.IOException;
 
-import static org.testng.Assert.assertTrue;
-
 public class LoginTests extends BaseTests {
 
     @DataProvider

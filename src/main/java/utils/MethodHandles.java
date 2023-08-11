@@ -20,19 +20,19 @@ public class MethodHandles {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
         wait.until(ExpectedConditions.elementToBeClickable(locator));
-        scrollToElement(driver,locator);
+//        scrollToElement(driver,locator);
         driver.findElement(locator).click();
     }
     protected void sendKeys(By locator,String text){
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
-        scrollToElement(driver,locator);
+//        scrollToElement(driver,locator);
         driver.findElement(locator).sendKeys(text);
     }
     protected String getText(By locator){
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
-        scrollToElement(driver,locator);
+//        scrollToElement(driver,locator);
         return driver.findElement(locator).getText();
     }
 

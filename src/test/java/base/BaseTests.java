@@ -28,21 +28,21 @@ public class BaseTests {
     @Parameters("browser")
     private void setUpBrowser(String browser){
         if (browser.equalsIgnoreCase("chrome")){
-            WebDriverManager.chromedriver().setup();
+//            WebDriverManager.chromedriver().setup();
             driver = new EventFiringWebDriver(new ChromeDriver());
         }
         else if (browser.equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
+//            WebDriverManager.firefoxdriver().setup();
             driver = new EventFiringWebDriver(new FirefoxDriver());
         }
         else if (browser.equalsIgnoreCase("headlessChrome")){
-            WebDriverManager.chromedriver().setup();
+//            WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.setHeadless(true);
             driver = new EventFiringWebDriver(new ChromeDriver(options));
         }
         else if (browser.equalsIgnoreCase("headlessFirefox")){
-            WebDriverManager.firefoxdriver().setup();
+//            WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
             options.setHeadless(true);
             driver = new EventFiringWebDriver(new FirefoxDriver(options));
@@ -77,10 +77,10 @@ public class BaseTests {
 
     }
 
-    @AfterClass
-    public void tearDown(){
-        driver.quit();
-    }
+//    @AfterClass
+//    public void tearDown(){
+//        driver.quit();
+//    }
 
     @BeforeSuite
     public void startSuite(){
