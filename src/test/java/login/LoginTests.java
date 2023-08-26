@@ -20,6 +20,7 @@ public class LoginTests extends BaseTests {
 
     @Test(dataProvider = "testDataFromSuccessfulLogin")
     public void testSuccessfulLogin(String data){
+        System.out.println(data);
         String users[] = data.split(",");
         LoginPage loginPage = homePage.clickOnLoginLink();
         loginPage.insertUsername(users[0]);

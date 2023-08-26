@@ -1,8 +1,6 @@
 package base;
 
 import data.ReadDataFromJsonFile;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +12,6 @@ import pages.HomePage;
 import utils.EventReporter;
 import utils.ScreenRecorderUtil;
 import utils.UtilsTests;
-
 import java.lang.reflect.Method;
 
 public class BaseTests {

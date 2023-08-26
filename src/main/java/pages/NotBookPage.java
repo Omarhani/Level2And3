@@ -15,8 +15,7 @@ public class NotBookPage extends MethodHandles {
 
     private By shoppingCartLink = By.cssSelector(".ico-cart");
 
-    WebDriverWait wait;
-
+    private By itemLink = By.cssSelector(".product-title a");
 
 
     public NotBookPage(WebDriver driver) {
@@ -24,6 +23,9 @@ public class NotBookPage extends MethodHandles {
     }
     public void clickOnAddTOCardButton(){
         click(addToCardButton);
+    }
+    public void clickOnItemLink(){
+        click(itemLink);
     }
 
     public String getItems(){

@@ -27,4 +27,11 @@ public class LoginPage extends MethodHandles {
     public void clickOnLoginButton(){
         click(loginButton);
     }
+
+    public HomePage loginFeature(String username, String password){
+        insertUsername(username);
+        insertPassword(password);
+        clickOnLoginButton();
+        return new HomePage(driver);
+    }
 }

@@ -9,10 +9,10 @@ public class CheckOutPage extends MethodHandles {
 
     private By billingAddressContinueButton = By.name("save");
 
-    private By shippingMethodContinueButton = By.id("shipping-method-please-wait");
+    private By shippingMethodContinueButton = By.cssSelector(".button-1.shipping-method-next-step-button");
 
-    private By paymentMethodContinueButton = By.id("payment-method-please-wait");
-    private By paymentInformationContinueButton = By.id("payment-info-please-wait");
+    private By paymentMethodContinueButton = By.cssSelector(".button-1.payment-method-next-step-button");
+    private By paymentInformationContinueButton = By.cssSelector(".button-1.payment-info-next-step-button");
 
     private By conFirmButton = By.xpath("//button[contains(text(),'Confirm')]");
     public CheckOutPage(WebDriver driver) {
@@ -29,7 +29,7 @@ public class CheckOutPage extends MethodHandles {
         click(paymentMethodContinueButton);
     }
     public void clickOnPaymentInformationContinueButton(){
-        click(paymentMethodContinueButton);
+        click(paymentInformationContinueButton);
     }
 
     public CompletePage clickOnConfirmButton(){

@@ -7,12 +7,12 @@ import utils.MethodHandles;
 public class CompletePage extends MethodHandles {
 
 
-    private By thankYou = By.tagName("h1");
+    private By thankYou = By.cssSelector(".page-title h1");
     public CompletePage(WebDriver driver) {
         super(driver);
     }
 
-    public void getValidationMessage(){
-        getText(thankYou);
+    public String getValidationMessage(){
+        return getText(thankYou);
     }
 }
