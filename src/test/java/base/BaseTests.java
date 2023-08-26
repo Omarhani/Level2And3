@@ -24,6 +24,7 @@ public class BaseTests {
     private final  String FILENAME = "testData.json";
     @Parameters("browser")
     private void setUpBrowser(String browser){
+        // comment
         if (browser.equalsIgnoreCase("chrome")){
 //            WebDriverManager.chromedriver().setup();
             driver = new EventFiringWebDriver(new ChromeDriver());
